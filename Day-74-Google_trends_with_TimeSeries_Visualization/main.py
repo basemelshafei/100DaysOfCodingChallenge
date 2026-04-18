@@ -29,8 +29,8 @@ df_bitcoin_daily_price.DATE = pd.to_datetime(df_bitcoin_daily_price.DATE)
 df_btc_monthly = df_bitcoin_daily_price.resample('M', on='DATE').last()
 
 # Creating a basic chart
-plt.figure(figsize=(14, 8), dpi=120)
-plt.title('Tesla Web Search vs Price', fontsize=18)
+plt.figure(figsize=(14, 8), dpi=130)
+plt.title('Tesla Web Search vs Price', fontsize=17)
 plt.xticks(fontsize=14, rotation=45)
 ax1 = plt.gca()
 ax2 = ax1.twinx()
